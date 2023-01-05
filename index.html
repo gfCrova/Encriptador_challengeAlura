@@ -16,20 +16,21 @@
         <div class="container-fluid">
             <div class="row">
                 <h1 class=" bg-secondary bg-gradient">Encriptar/Desencriptar Texto</h1>
-                <div class="col-md-8">
+                <div class="col-md-9">
                         <form action="" class="form-group">
-                            <div class="mb-3">
+                            <div class="row p-5">
                                 <label for="palabra" class="form-label fw-bold"></label>
-                                <input type="text" class="form-control-lg border-0 w-50" name="palabra" id="palabra" aria-describedby="helpId"
-                                    placeholder="Ingresa el texto aquí">
+                                <input type="text" class="form-control-lg border-0 w-100" name="palabra" id="palabra"                                    placeholder="Ingresa el texto aquí">
                             </div>
-                            <div class="fixed-bottom mb-5 pb-5 ms-4">
-                                <button class="btn btn-primary w-25" type="button">Encriptar</button>
-                                <button class="btn btn-outline-primary w-25" type="button">Desencriptar</button>
+                            <div class="row py-5 ms-5 position-absolute bottom-0">
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-primary btn-lg rounded-4 w-50" type="button">Encriptar</button>
+                                    <button class="btn btn-outline-primary btn-lg rounded-4 w-50" type="button">Desencriptar</button>
+                                </div>
                             </div>
                         </form>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div id="div_mensaje" class="mb-3">
                         <img src="img/Ningun_mensaje.png" class="img-fluid" alt="no_hay_texto">
                     </div>
