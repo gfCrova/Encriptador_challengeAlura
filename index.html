@@ -8,6 +8,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -16,13 +17,14 @@
         <div class="container-fluid">
             <div class="row">
                 <h1 class=" bg-secondary bg-gradient">Encriptar/Desencriptar Texto</h1>
-                <div class="col-md-9">
+                <div class="col-md-8">
                         <form action="" class="form-group">
                             <div class="row p-5">
                                 <label for="palabra" class="form-label fw-bold"></label>
                                 <input type="text" class="form-control-lg border-0 w-100" name="palabra" id="palabra"                                    placeholder="Ingresa el texto aquí">
                             </div>
-                            <div class="row py-5 ms-5 position-absolute bottom-0">
+                            <div class="row p-5 m-auto position-absolute bottom-0">
+                                <small class="mb-2"><i class="bi bi-exclamation-circle"></i> Solo letras minúsculas y sin acentos</small>
                                 <div class="d-flex gap-2">
                                     <button class="btn btn-primary btn-lg rounded-4 w-50" type="button">Encriptar</button>
                                     <button class="btn btn-outline-primary btn-lg rounded-4 w-50" type="button">Desencriptar</button>
@@ -30,8 +32,8 @@
                             </div>
                         </form>
                 </div>
-                <div class="col-md-3">
-                    <div id="div_mensaje" class="mb-3">
+                <div class="col-md-4">
+                    <div id="div_mensaje">
                         <img src="img/Ningun_mensaje.png" class="img-fluid" alt="no_hay_texto">
                     </div>
                 </div>
