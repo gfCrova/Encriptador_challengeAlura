@@ -8,8 +8,8 @@ imagen.style.visibility = "visible";
 const encriptar = () => {
 
     const texto = document.getElementById("palabra").value;
-
-    mensaje.style.visibility = "visible";
-    mensaje.innerHTML = texto;
+    const str = texto.replaceAll('e', 'enter');
     imagen.style.visibility = "hidden";
+    mensaje.style.visibility = "visible";
+    mensaje.innerHTML = str;
 };
