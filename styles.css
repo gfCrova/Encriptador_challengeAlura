@@ -8,8 +8,13 @@ body {
     background: linear-gradient(0deg, black, rgb(8, 88, 119), rgb(76, 89, 94)) no-repeat;
 }
 
+button {
+    min-width: 175px;
+}
+
 button:hover {
     transform: scale(1.1);
+    transition: all 0.4s;
 }
 
 button:active {
