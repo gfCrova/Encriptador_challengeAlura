@@ -1,11 +1,14 @@
-html {
+
+* {
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
 
-body {  
-    background-color: #F3F5FC; 
+body {
+    background: linear-gradient(0deg, black, rgb(8, 88, 119), rgb(76, 89, 94));
+    background-repeat: no-repeat;
 }
 
-#div_imagen {
-    background: url("img/Ningun_mensaje.png");
+main {
+    min-height: 890px;
 }
