@@ -5,3 +5,7 @@ html {
 body {  
     background-color: #F3F5FC; 
 }
+
+#div_imagen {
+    background: url("img/Ningun_mensaje.png");
+}
