@@ -15,15 +15,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <main class="m-4">
+<body class="bg-dark">
+    <main class="m-4 pb-5">
         <div class="container-fluid">
-            <div class="row">
-                <div class="m-3">
+            <div class="row gap-2">
+                <div class="py-5">
                     <h1 class="text-light text-center">Encriptar/Desencriptar Texto</h1>
                 </div>
-                <div class="col-md-7">
-                    <form action="" class="form-control border-0">
+                <div class="col-md-6 p-0 mx-auto">
+                    <form action="" class="form-control border-0 rounded-3">
                         <div class="p-3">
                             <label for="palabra" class="form-label fw-bold"></label>
                             <textarea type="text" class="form-control fs-4 border-0 w-100" name="palabra" id="palabra"
@@ -33,17 +33,20 @@
                                     minúsculas y sin
                                     acentos</em></small>
                         </div>
-                        <div class="d-flex gap-3 pb-3 px-3">
-                            <button class="btn btn-dark btn-lg fs-3 border-2 rounded-4 w-50" type="button"
+                        <div class="d-flex gap-3 pb-4 px-3">
+                            <button class="btn btn-dark bg-gradient btn-lg border-0 rounded-4 w-50" type="button"
                                 onclick="encriptar();"><i class="bi bi-envelope-dash-fill"> Encriptar</i></button>
-                            <button class="btn btn-dark btn-lg fs-3 border-2 rounded-4 w-50" type="button"
+                            <button class="btn btn-dark bg-gradient btn-lg border-0 rounded-4 w-50" type="button"
                                 onclick="desencriptar();"><i class="bi bi-envelope-open-fill"> Desencriptar</i></button>
                         </div>
                     </form>
                 </div>
-                <div class="col-md-5 bg-light rounded-2 containers">
-                    <div id="div_mensaje" class="position-relative fs-2">
-                        <button class="btn btn-outline-danger" type="button">Copiar</button>
+                <div class="col-md-5 bg-light rounded-3 mx-auto">
+                    <div class="position-relative px-3 text-center">
+                        <div class="py-3">
+                            <label for="div_mensaje" class="form-label fw-bold"></label>
+                            <textarea type="text" class="form-control fs-4 border-0 w-100" name="div_mensaje" id="div_mensaje" rows="10" placeholder=" "></textarea>
+                            <button class="btn btn-secondary bg-gradient btn-lg border-0 rounded-3 mt-5 mb-2 fs-5" type="button">Copiar</button>
                     </div>
                     <div id="div_imagen" class="position-absolute">
                         <!--<img src="img/Ningun_mensaje.png" class="img-fluid" alt="no_hay_texto">-->
@@ -52,9 +55,24 @@
             </div>
         </div>
     </main>
-    <footer class="text-center text-light fixed-bottom">
+        <div class="container py-2">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                  <a href="/" class="items mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                  </a>
+                  <span class="mb-3 mb-md-0 text-light">© GFC 2023</span>
+                </div>
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                  <li class="items ms-3 fs-1"><a class="text-light" href="https://www.linkedin.com/in/gian-crova/"><i class="bi bi-linkedin"></i></a></li>
+                  <li class="items ms-3 fs-1"><a class="text-light" href="https://www.instagram.com/giancrova/"><i class="bi bi-instagram"></i></a></li>
+                  <li class="items ms-3 fs-1"><a class="text-light" href="https://github.com/gfCrova"><i class="bi bi-github"></i></a></li>
+                </ul>
+            </footer>
+        </div>
+    <!--<footer class="text-center text-light bg-dark py-4 fixed-bottom">
         <p>&copy;<em> Autor, Gian Franco Crova</em></p>
-    </footer>
+    </footer>-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
