@@ -18,22 +18,26 @@
             <div class="row">
                 <h1 class=" bg-secondary bg-gradient">Encriptar/Desencriptar Texto</h1>
                 <div class="col-md-8 bg-warning">
-                        <form action="" class="form-control">
-                            <div class="row p-5">
-                                <label for="palabra" class="form-label fw-bold"></label>
-                                <input type="text" class="form-control fs-4 border-0 w-100" name="palabra" id="palabra"                                    placeholder="Ingresa el texto aquí">
+                    <form action="" class="form-control">
+                        <div class="row p-5">
+                            <label for="palabra" class="form-label fw-bold"></label>
+                            <input type="text" class="form-control fs-4 border-0 w-100" name="palabra" id="palabra"
+                                placeholder="Ingresa el texto aquí">
+                        </div>
+                        <div class="row p-5 m-auto">
+                            <small class="mb-2"><i class="bi bi-exclamation-circle"></i> Solo letras minúsculas y sin
+                                acentos</small>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-primary btn-lg rounded-4 w-50" type="button" onclick="encriptar();">Encriptar</button>
+                                <button class="btn btn-outline-primary btn-lg rounded-4 w-50" type="button">Desencriptar</button>
                             </div>
-                            <div class="row p-5 m-auto">
-                                <small class="mb-2"><i class="bi bi-exclamation-circle"></i> Solo letras minúsculas y sin acentos</small>
-                                <div class="d-flex gap-2">
-                                    <button class="btn btn-primary btn-lg rounded-4 w-50" type="button">Encriptar</button>
-                                    <button class="btn btn-outline-primary btn-lg rounded-4 w-50" type="button">Desencriptar</button>
-                                </div>
-                            </div>
-                        </form>
+                        </div>
+                    </form>
                 </div>
                 <div class="col-md-4">
-                    <div id="div_mensaje">
+                    <div id="div_mensaje" class="position-relative">
+                    </div>
+                    <div id="div_imagen" class="position-absolute">
                         <img src="img/Ningun_mensaje.png" class="img-fluid" alt="no_hay_texto">
                     </div>
                 </div>
