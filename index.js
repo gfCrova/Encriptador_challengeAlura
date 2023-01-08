@@ -68,7 +68,7 @@ const check = (e) => {
     if (tecla == 8) {
         return true;
     }
-    patron = /[a-z0-9]/;
+    patron = /[a-z]/;
     tecla_final = String.fromCharCode(tecla);
     return patron.test(tecla_final);
 }
