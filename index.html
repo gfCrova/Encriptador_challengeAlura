@@ -30,8 +30,8 @@
                     <form action="" class="form-control">
                         <div class="p-3">
                             <label for="palabra" class="form-label fw-bold"></label>
-                            <textarea type="text" class="form-control fs-4 border-2 w-100" name="palabra" id="palabra" onkeypress="return check(event)" placeholder="Ingresa el texto aquí.." rows="10"></textarea>
-                            <small id="small" class="text-danger bi bi-exclamation-circle"><em> Solo letras minúsculas y sin acentos</em></small>
+                            <textarea type="text" class="form-control fs-4 border-2 w-100" name="palabra" id="palabra" onkeydown="return check(event)" placeholder="Ingresa el texto aquí.." rows="10"></textarea>
+                            <small class="text-danger bi bi-exclamation-circle"><em> Solo letras minúsculas y sin acentos</em></small>
                         </div>
                         <div class="d-flex gap-2 pb-4 px-3 justify-content-center">
                             <button id="btnEncryp" class="btn btn-dark bg-gradient p-3" type="button"

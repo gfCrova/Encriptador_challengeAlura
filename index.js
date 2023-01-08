@@ -63,7 +63,7 @@ const alertCopiado = (mensaje, colorCss, time) => {
 
 const check = (e) => {
 
-    tecla = (document.all) ? e.code : e.which;
+    tecla = (document.all) ? e.charCode : e.which;
 
     if (tecla == 8) {
         return true;
