@@ -9,8 +9,13 @@ body {
   background: linear-gradient(0deg, black, rgb(8, 88, 119), rgb(76, 89, 94)) no-repeat;
   background-attachment: fixed;
 }
+body main .container .row form {
+  border: none;
+}
 body main .container .row button {
   min-width: 175px;
+  border: none;
+  border-radius: 10px;
 }
 body main .container .row button:hover {
   transform: scale(1.1);

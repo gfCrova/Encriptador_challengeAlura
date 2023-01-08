@@ -21,20 +21,22 @@
             <div class="row">
                 <div class="py-3">
                     <a href="/"><img id="logoAlura" class="img-fluid position-absolute ms-4" src="assets/img/logo.png" alt="logo de alura"></a>
-                    <h1 class="text-light text-center">Challenge ONE</h1>
-                    <p class="text-light text-center">Encriptador/Desencriptador de texto</p>
+                    <div class="text-light text-center">
+                        <h1>Challenge ONE</h1>
+                        <p>Encriptador/Desencriptador de texto</p>
+                    </div>
                 </div>
                 <div class="col-md-6 p-0 mx-auto">
-                    <form action="" class="form-control border-0 rounded-0">
+                    <form action="" class="form-control">
                         <div class="p-3">
                             <label for="palabra" class="form-label fw-bold"></label>
                             <textarea type="text" class="form-control fs-4 border-2 w-100" name="palabra" id="palabra" onkeypress="return check(event)" placeholder="Ingresa el texto aquí.." rows="10"></textarea>
                             <small class="text-danger"><em><i class="bi bi-exclamation-circle"></i> Solo letras minúsculas y sin acentos</em></small>
                         </div>
-                        <div class="d-flex gap-3 pb-4 px-3 justify-content-center">
-                            <button id="btnEncryp" class="btn btn-dark bg-gradient border-0 rounded-4 p-3" type="button"
+                        <div class="d-flex gap-2 pb-4 px-3 justify-content-center">
+                            <button id="btnEncryp" class="btn btn-dark bg-gradient p-3" type="button"
                                 onclick="encriptar();"><i class="bi bi-envelope-dash-fill"> Encriptar</i></button>
-                            <button id="btnDesencryp" class="btn btn-dark bg-gradient border-0 rounded-4 p-3" type="button"
+                            <button id="btnDesencryp" class="btn btn-dark bg-gradient p-3" type="button"
                                 onclick="desencriptar();"><i class="bi bi-envelope-open-fill"> Desencriptar</i></button>
                         </div>
                     </form>
@@ -66,11 +68,11 @@
                 <span class="mb-3 mb-md-0 text-light">© Gian Franco Crova 2023</span>
             </div>
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <a class="text-light items ms-3 fs-1" href="https://www.linkedin.com/in/gian-crova/"
+                <a class="text-light item1 ms-3 fs-1" href="https://www.linkedin.com/in/gian-crova/"
                         target="_blank"><i class="bi bi-linkedin"></i></a>
-                <a class="text-light items ms-3 fs-1" href="https://www.instagram.com/giancrova/"
+                <a class="text-light item2 ms-3 fs-1" href="https://www.instagram.com/giancrova/"
                         target="_blank"><i class="bi bi-instagram"></i></a>
-                <a class="text-light items ms-3 fs-1" href="https://github.com/gfCrova" target="_blank"><i
+                <a class="text-light item3 ms-3 fs-1" href="https://github.com/gfCrova" target="_blank"><i
                             class="bi bi-github"></i></a>
             </ul>
         </footer>

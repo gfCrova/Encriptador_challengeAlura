@@ -12,9 +12,14 @@ body {
     main {
         .container {
             .row {
+                form {
+                    border: none;
+                }
                 button {
                     min-width: 175px;
-
+                    border: none;
+                    border-radius: 10px;
+                
                     &:hover {
                         transform: scale(1.1);
                         transition: all 0.4s;
