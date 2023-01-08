@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="h-100">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -32,9 +32,9 @@
                             <small class="text-danger"><em><i class="bi bi-exclamation-circle"></i> Solo letras minúsculas y sin acentos</em></small>
                         </div>
                         <div class="d-flex gap-3 pb-4 px-3 justify-content-center">
-                            <button class="btn btn-dark bg-gradient border-0 rounded-4 p-3" type="button"
+                            <button id="btnEncryp" class="btn btn-dark bg-gradient border-0 rounded-4 p-3" type="button"
                                 onclick="encriptar();"><i class="bi bi-envelope-dash-fill"> Encriptar</i></button>
-                            <button class="btn btn-dark bg-gradient border-0 rounded-4 p-3" type="button"
+                            <button id="btnDesencryp" class="btn btn-dark bg-gradient border-0 rounded-4 p-3" type="button"
                                 onclick="desencriptar();"><i class="bi bi-envelope-open-fill"> Desencriptar</i></button>
                         </div>
                     </form>
@@ -51,7 +51,7 @@
                         </div>
                         <div id="div_imagen" class="position-absolute top-0 mt-5 px-5">
                             <div class="d-flex gap-3 flex-wrap justify-content-center">
-                                <img src="img/img_ningunMensaje.png" class="img-fluid" alt="no_hay_texto">
+                                <img id="imgNoMensaje" src="img/img_ningunMensaje.png" class="img-fluid" alt="no_hay_texto">
                                 <h1 class="fs-2">Ningún mensaje fue encontrado</h1>
                                 <p>Ingresa el texto que deseas encriptar o desencriptar</p>
                             </div>
@@ -61,24 +61,17 @@
             </div>
     </main>
     <div class="container">
-        <ul class="nav justify-content-center pb-3 mb-3">
-            <li class="nav-item"><a href="#" target="_blank" class="nav-link px-2">ONE</a></li>
-            <li class="nav-item"><a href="https://www.aluracursos.com/?gclid=Cj0KCQiAzeSdBhC4ARIsACj36uGyWZOHaNntoWN9k5cAbDpKdS4mIwSnAYEwo2VTBCEl6EwpvcEh6-MaApNrEALw_wcB" target="_blank" class="nav-link px-2">Alura Latam</a></li>
-            <li class="nav-item"><a href="#" target="_blank" class="nav-link px-2">Pricing</a></li>
-            <li class="nav-item"><a href="#" target="_blank" class="nav-link px-2">FAQs</a></li>
-            <li class="nav-item"><a href="#" target="_blank" class="nav-link px-2">About</a></li>
-          </ul>
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top">
             <div class="col-md-4 d-flex align-items-center">
                 <span class="mb-3 mb-md-0 text-light">© Gian Franco Crova 2023</span>
             </div>
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="items ms-3 fs-1"><a class="text-light" href="https://www.linkedin.com/in/gian-crova/"
-                        target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                <li class="items ms-3 fs-1"><a class="text-light" href="https://www.instagram.com/giancrova/"
-                        target="_blank"><i class="bi bi-instagram"></i></a></li>
-                <li class="items ms-3 fs-1"><a class="text-light" href="https://github.com/gfCrova" target="_blank"><i
-                            class="bi bi-github"></i></a></li>
+                <a class="text-light items ms-3 fs-1" href="https://www.linkedin.com/in/gian-crova/"
+                        target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a class="text-light items ms-3 fs-1" href="https://www.instagram.com/giancrova/"
+                        target="_blank"><i class="bi bi-instagram"></i></a>
+                <a class="text-light items ms-3 fs-1" href="https://github.com/gfCrova" target="_blank"><i
+                            class="bi bi-github"></i></a>
             </ul>
         </footer>
     </div>
