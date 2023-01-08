@@ -41,11 +41,11 @@ const copyText = () => {
     mensaje.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(mensaje.value);
 
-    alertCopiado('Copiado', 'success')
+    alertCopiado('Copiado', 'success', 2500);
 }
 
 
-const alertCopiado = (mensaje, colorCss) => {
+const alertCopiado = (mensaje, colorCss, time) => {
 
     const div = document.createElement('div');
     div.className = `alert alert-${colorCss} position-absolute bi bi-check`;
@@ -57,7 +57,7 @@ const alertCopiado = (mensaje, colorCss) => {
 
     setTimeout(() => {
         document.querySelector('.alert').remove();
-    }, 2500);
+    }, time);
 }
 
 
