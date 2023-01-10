@@ -1,4 +1,5 @@
-# Encriptador_challengeAlura
+<h1 align="center">Encriptador/Desencriptador</h1> 
+## Alura Challenge ONE
 
 Una App que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
 
