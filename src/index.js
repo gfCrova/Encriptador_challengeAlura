@@ -51,7 +51,7 @@ const check = (e) => {
     patron = /[a-z\s]/;
     tecla_final = String.fromCharCode(tecla);
     if (!patron.test(tecla_final)) {
-        alerts('Solo letras minúsculas y sin acentos', 'danger', 1000, '.div_palabra', '.small');
+        alerts('Solo se permiten letras minúsculas y sin acentos', 'danger', 2000, '.div_palabra', '.small');
         disableTextArea();
     }
     return patron.test(tecla_final);
@@ -61,7 +61,7 @@ const check = (e) => {
 const alerts = (mensaje, colorCss, time, contain, area) => {
 
     const div = document.createElement('div');
-    div.className = `alert alert-${colorCss} position-absolute bi bi-check`;
+    div.className = `alert alert-${colorCss} position-absolute`;
     div.appendChild(document.createTextNode(mensaje));
 
     const container = document.querySelector(contain);
@@ -72,13 +72,6 @@ const alerts = (mensaje, colorCss, time, contain, area) => {
         document.querySelector('.alert').remove();
     }, time);
 }
-
-/*const alertChars = (msj, colorCss) => {
-    const div = document.createElement('div');
-    div.className = `alert alert-${colorCss} position-absolute bi bi-check`;
-    div.appendChild(document.createTextNode(msj));
-    div.insertBefore(textarea1);
-};*/  
 
 // Disable TEXTAREA
 const disableTextArea = () => {
