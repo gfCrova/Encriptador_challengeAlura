@@ -11,10 +11,10 @@ body {
 }
 body main .container-fluid .row .divHeader h1 {
   font-weight: 800;
-  text-shadow: 0 2px 7px rgba(8, 94, 121, 0.349);
+  text-shadow: 0 2px 7px rgba(255, 255, 255, 0.349);
 }
 body main .container-fluid .row .divHeader p {
-  color: rgb(77, 77, 77);
+  color: rgb(54, 54, 54);
 }
 body main .container-fluid .row .div1 {
   box-shadow: -10px 15px 35px rgb(0, 0, 0);
