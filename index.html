@@ -18,34 +18,34 @@
 <body class="bg-dark">
     <main class="my-4 pb-5">
         <div class="container">
-            <div class="row">
+            <div class="row gap-3 mx-auto">
                 <div class="py-3">
                     <a href="/"><img id="logoAlura" class="img-fluid position-absolute ms-4" src="assets/img/logo.png" alt="logo de alura"></a>
-                    <div class="text-light text-center">
+                    <div class="text-center pb-2">
                         <h1>Challenge ONE</h1>
                         <p>Encriptador/Desencriptador de texto</p>
                     </div>
                 </div>
-                <div class="col-md-6 p-0 mx-auto">
+                <div class="div1 col-md-5 p-0 mx-auto rounded-3">
                     <form action="" class="form-control">
                         <div class="div_palabra position-relative p-3">
                             <label for="palabra" class="form-label fw-bold"></label>
-                            <textarea type="text" class="form-control fs-4 border-2 w-100" name="palabra" id="palabra" onkeypress="return check(event)" placeholder="Ingresa el texto aquí.." rows="10"></textarea>
-                            <small class="small text-danger bi bi-exclamation-circle"><em> Solo letras minúsculas y sin acentos</em></small>
+                            <textarea type="text" class="form-control fs-4 bg-gradient border-2 w-100" name="palabra" id="palabra" onkeypress="return check(event)" placeholder="Ingresa el texto aquí.." rows="10"></textarea>
+                            <small class="small text-light bi bi-exclamation-circle"><em> Solo letras minúsculas y sin acentos</em></small>
                         </div>
-                        <div class="d-flex gap-2 pb-4 px-3 justify-content-center">
+                        <div class="divButtons pb-4 px-3">
                             <button id="btnEncryp" class="btn btn-dark bg-gradient p-3" type="button" onclick="encriptar();"><i class="bi bi-envelope-dash-fill"> Encriptar</i></button>
                             <button id="btnDesencryp" class="btn btn-dark bg-gradient p-3" type="button" onclick="desencriptar();"><i class="bi bi-envelope-open-fill"> Desencriptar</i></button>
                         </div>
                     </form>
                 </div>
-                <div class="col-md-6 bg-dark mx-auto">
+                <div class="div2 col-md-5 mx-auto rounded-3">
                     <div class="position-relative px-3 text-center text-light">
                         <div class="div_mensaje py-4">
                             <label for="mensaje" class="form-label fw-bold"></label>
-                            <textarea type="text" class="form-control fs-4 border-0 w-100" name="mensaje" id="mensaje" rows="10" readonly></textarea>
+                            <textarea type="text" class="form-control text-light bg-gradient fs-4 border-0 w-100" name="mensaje" id="mensaje" rows="10" readonly></textarea>
                             <button id="btnCopy"
-                                class="btn btn-primary bg-gradient btn-lg border-0 rounded-3 mt-5 mb-2 fs-5"
+                                class="btn btn-outline-success bg-gradient btn-lg border-0 rounded-3 mt-5 mb-2 fs-5"
                                 type="button" onclick="copyText();"><i class="bi bi-clipboard2"> Copiar</i></button>
                         </div>
                         <div id="div_imagen" class="position-absolute top-0 mt-5 px-5">
@@ -60,14 +60,13 @@
             </div>
     </main>
     <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top border-2">
             <div class="col-md-4 d-flex align-items-center">
-                <span class="mb-3 mb-md-0 text-light">© Gian Franco Crova 2023</span>
+                <span class="mb-3 mb-md-0">© Gian Franco Crova 2023</span>
             </div>
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <a class="text-light item1 ms-3 fs-1" href="https://www.linkedin.com/in/gian-crova/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
-                <a class="text-light item2 ms-3 fs-1" href="https://www.instagram.com/giancrova/" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
-                <a class="text-light item3 ms-3 fs-1" href="https://github.com/gfCrova" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+            <ul class="nav col-md-4 justify-content-end list-unstyled">
+                <a class="item1 ms-3 fs-1" href="https://www.linkedin.com/in/gian-crova/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+                <a class="item3 ms-3 fs-1" href="https://github.com/gfCrova" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
             </ul>
         </footer>
     </div>
