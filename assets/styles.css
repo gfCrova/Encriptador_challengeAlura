@@ -6,11 +6,23 @@
 
 body {
   font-family: "Rubik", sans-serif;
-  background: linear-gradient(0deg, black, rgb(8, 88, 119), rgb(76, 89, 94)) no-repeat;
+  background: radial-gradient(rgba(184, 213, 230, 0.699), rgba(176, 223, 255, 0.788), rgba(9, 85, 173, 0.733));
   background-attachment: fixed;
 }
-body main .container .row form {
-  border: none;
+body main .container .row .div1 {
+  box-shadow: -10px 15px 35px rgb(0, 0, 0);
+}
+body main .container .row .div1 form {
+  border: 0;
+  background: radial-gradient(rgb(176, 223, 255), rgb(19, 100, 194), rgb(6, 64, 129));
+}
+body main .container .row .div1 form .divButtons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+body main .container .row .div1 form textarea {
+  background-color: rgb(233, 233, 233);
 }
 body main .container .row button {
   min-width: 175px;
@@ -23,6 +35,13 @@ body main .container .row button:hover {
 }
 body main .container .row button:active {
   transform: scale(0.9);
+}
+body main .container .row .div2 {
+  box-shadow: 10px 15px 35px rgba(255, 255, 255, 0.562);
+  background: radial-gradient(rgb(59, 59, 59), rgb(33, 34, 34), rgb(0, 0, 0));
+}
+body main .container .row .div2 textarea {
+  background-color: rgba(6, 63, 129, 0.925);
 }
 body main .container .row #logoAlura {
   animation: logoSlider 1.4s ease-in-out;
@@ -41,16 +60,19 @@ body main .container .row #btnEncryp {
 body main .container .row #btnDesencryp {
   animation: slider2 1.2s ease-in-out;
 }
-body .container a:hover {
+body .container footer a {
+  color: black;
+}
+body .container footer a:hover {
   transform: scale(1.1);
 }
-body .container a:nth-child(1) {
+body .container footer a:nth-child(1) {
   animation: items 0.7s ease-in-out;
 }
-body .container a:nth-child(2) {
+body .container footer a:nth-child(2) {
   animation: items 1.2s ease-in-out;
 }
-body .container a:nth-child(3) {
+body .container footer a:nth-child(3) {
   animation: items 1.6s ease-in-out;
 }
 
@@ -92,6 +114,14 @@ body .container a:nth-child(3) {
   }
   100% {
     transform: scale(1);
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  main .container .row .div1 form .divButtons {
+    display: block !important;
+  }
+  main .container .row .div1 form .divButtons button {
+    margin: 5px 25px;
   }
 }
 
