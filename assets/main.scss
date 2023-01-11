@@ -11,7 +11,7 @@ body {
     background-attachment: fixed;
 
     main {
-        .container {
+        .container-fluid {
             .row {
                 .div1 {
                     box-shadow: -10px 15px 35px rgba(0, 0, 0);
@@ -21,7 +21,7 @@ body {
                         .divButtons {
                             display: flex;
                             justify-content: center;
-                            gap: 2rem;
+                            gap: 1.5rem;
                         }
                         textarea {
                             background-color: rgb(233, 233, 233);
@@ -147,16 +147,21 @@ body {
 }
 
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (max-width: 992px) {
     main {
-        .container {
+        .container-fluid {
             .row {
+                gap: 1rem;
+                .divHeader {
+                    margin-top:4rem;
+                }
                 .div1 {
                     form {
                         .divButtons {
                             display: block !important;
                             button {
-                                margin: 5px 25px;
+                                margin: 10px auto;
+                                width: 100%;
                             }
                         }
                     }

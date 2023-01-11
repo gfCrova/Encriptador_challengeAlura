@@ -9,55 +9,55 @@ body {
   background: radial-gradient(rgba(184, 213, 230, 0.699), rgba(176, 223, 255, 0.788), rgba(9, 85, 173, 0.733));
   background-attachment: fixed;
 }
-body main .container .row .div1 {
+body main .container-fluid .row .div1 {
   box-shadow: -10px 15px 35px rgb(0, 0, 0);
 }
-body main .container .row .div1 form {
+body main .container-fluid .row .div1 form {
   border: 0;
   background: radial-gradient(rgb(176, 223, 255), rgb(19, 100, 194), rgb(6, 64, 129));
 }
-body main .container .row .div1 form .divButtons {
+body main .container-fluid .row .div1 form .divButtons {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
-body main .container .row .div1 form textarea {
+body main .container-fluid .row .div1 form textarea {
   background-color: rgb(233, 233, 233);
 }
-body main .container .row button {
+body main .container-fluid .row button {
   min-width: 175px;
   border: none;
   border-radius: 10px;
 }
-body main .container .row button:hover {
+body main .container-fluid .row button:hover {
   transform: scale(1.1);
   transition: all 0.4s;
 }
-body main .container .row button:active {
+body main .container-fluid .row button:active {
   transform: scale(0.9);
 }
-body main .container .row .div2 {
+body main .container-fluid .row .div2 {
   box-shadow: 10px 15px 35px rgba(255, 255, 255, 0.562);
   background: radial-gradient(rgb(59, 59, 59), rgb(33, 34, 34), rgb(0, 0, 0));
 }
-body main .container .row .div2 textarea {
+body main .container-fluid .row .div2 textarea {
   background-color: rgba(6, 63, 129, 0.925);
 }
-body main .container .row #logoAlura {
+body main .container-fluid .row #logoAlura {
   animation: logoSlider 1.4s ease-in-out;
 }
-body main .container .row #logoAlura:hover {
+body main .container-fluid .row #logoAlura:hover {
   transform: scale(1.1);
   cursor: pointer;
   transition: 0.5s transform;
 }
-body main .container .row #imgNoMensaje {
+body main .container-fluid .row #imgNoMensaje {
   animation: imgSlider 1.4s ease-in-out;
 }
-body main .container .row #btnEncryp {
+body main .container-fluid .row #btnEncryp {
   animation: slider 1s ease-in-out;
 }
-body main .container .row #btnDesencryp {
+body main .container-fluid .row #btnDesencryp {
   animation: slider2 1.2s ease-in-out;
 }
 body .container footer a {
@@ -116,12 +116,19 @@ body .container footer a:nth-child(3) {
     transform: scale(1);
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
-  main .container .row .div1 form .divButtons {
+@media (max-width: 992px) {
+  main .container-fluid .row {
+    gap: 1rem;
+  }
+  main .container-fluid .row .divHeader {
+    margin-top: 4rem;
+  }
+  main .container-fluid .row .div1 form .divButtons {
     display: block !important;
   }
-  main .container .row .div1 form .divButtons button {
-    margin: 5px 25px;
+  main .container-fluid .row .div1 form .divButtons button {
+    margin: 10px auto;
+    width: 100%;
   }
 }
 

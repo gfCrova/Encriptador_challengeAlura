@@ -17,11 +17,11 @@
 
 <body class="bg-dark">
     <main class="my-4 pb-5">
-        <div class="container">
-            <div class="row gap-3 mx-auto">
+        <div class="container-fluid">
+            <div class="row mx-auto">
                 <div class="py-3">
                     <a href="/"><img id="logoAlura" class="img-fluid position-absolute ms-4" src="assets/img/logo.png" alt="logo de alura"></a>
-                    <div class="text-center pb-2">
+                    <div class="divHeader text-center pb-2">
                         <h1>Challenge ONE</h1>
                         <p>Encriptador/Desencriptador de texto</p>
                     </div>
@@ -45,7 +45,7 @@
                             <label for="mensaje" class="form-label fw-bold"></label>
                             <textarea type="text" class="form-control text-light bg-gradient fs-4 border-0 w-100" name="mensaje" id="mensaje" rows="10" readonly></textarea>
                             <button id="btnCopy"
-                                class="btn btn-outline-success bg-gradient btn-lg border-0 rounded-3 mt-5 mb-2 fs-5"
+                                class="btn btn-outline-success bg-gradient btn-lg border-0 rounded-3 mt-5 mb-2"
                                 type="button" onclick="copyText();"><i class="bi bi-clipboard2"> Copiar</i></button>
                         </div>
                         <div id="div_imagen" class="position-absolute top-0 mt-5 px-5">
