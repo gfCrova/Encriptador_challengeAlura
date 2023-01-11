@@ -34,7 +34,7 @@ body {
                             gap: 1.5rem;
                         }
                         textarea {
-                            background-color: rgb(233, 233, 233);
+                            background: linear-gradient(180deg, rgb(233, 233, 233), rgb(126, 126, 126));
                         }
                     }
                 }
@@ -57,7 +57,7 @@ body {
                     box-shadow: 10px 15px 35px rgba(255, 255, 255, 0.562);
                     background: radial-gradient( rgb(59, 59, 59), rgb(33, 34, 34), rgb(0, 0, 0));
                     textarea {
-                        background-color: rgba(6, 84, 129, 0.925);
+                        background: linear-gradient(180deg, rgba(6, 84, 129, 0.925), rgb(7, 34, 65), rgba(0, 0, 0, 0.712));
                     }
                 }
 

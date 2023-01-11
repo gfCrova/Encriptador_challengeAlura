@@ -29,7 +29,7 @@ body main .container-fluid .row .div1 form .divButtons {
   gap: 1.5rem;
 }
 body main .container-fluid .row .div1 form textarea {
-  background-color: rgb(233, 233, 233);
+  background: linear-gradient(180deg, rgb(233, 233, 233), rgb(126, 126, 126));
 }
 body main .container-fluid .row button {
   min-width: 175px;
@@ -48,7 +48,7 @@ body main .container-fluid .row .div2 {
   background: radial-gradient(rgb(59, 59, 59), rgb(33, 34, 34), rgb(0, 0, 0));
 }
 body main .container-fluid .row .div2 textarea {
-  background-color: rgba(6, 84, 129, 0.925);
+  background: linear-gradient(180deg, rgba(6, 84, 129, 0.925), rgb(7, 34, 65), rgba(0, 0, 0, 0.712));
 }
 body main .container-fluid .row #logoAlura {
   animation: logoSlider 1.4s ease-in-out;
