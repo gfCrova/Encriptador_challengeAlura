@@ -1,8 +1,9 @@
 
 <h1 align="center">Encriptador/Desencriptador de Texto</h1> <a href="https://www.aluracursos.com/?gclid=Cj0KCQiAtvSdBhD0ARIsAPf8oNkNDV1JY1TMuI1RAyXhI1vuyR-rOMjV8nLxElHwKbmcdRwRgxL1rg8aAqcDEALw_wcB"><img align="right"  src="https://www.oracle.com/a/ocom/img/rc56-customerlogo-alura-latam.png" width="150px"/></a>
 
-<h2 align="left"> Alura Challenge ONE </h2>
+### Alura Challenge ONE
 
+<br>
 
 Una App que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
 
@@ -12,7 +13,7 @@ Las "llaves" de encriptación que se utilizan son las siguientes:
 ``` La letra "e" es convertida para "enter" ``` <br>
 ``` La letra "i" es convertida para "imes" ``` <br>
 ``` La letra "o" es convertida para "ober" ``` <br>
-``` La letra "u" es convertida para "ufat" ``` <br>
+``` La letra "u" es convertida para "ufat" ``` <br><br>
 
 ### __Requisitos:__
 - Funciona solo con letras minúsculas
@@ -20,7 +21,7 @@ Las "llaves" de encriptación que se utilizan son las siguientes:
 - Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
 
 Por ejemplo:
-``` "gato" => "gaitober" ``` | ``` "gaitober" => "gato" ```
+``` "gato" => "gaitober" ``` | ``` "gaitober" => "gato" ``` <br><br>
 
 ## Para saber más: 
 
