@@ -38,7 +38,7 @@ const copyText = () => {
     mensaje.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(mensaje.value);
 
-    alerts('Copiado', 'success', 2500, '.div_mensaje', '#btnCopy');
+    alerts('Copiado', 'success', 2500, '.div_mensaje', '#btnCopy', 'bi bi-check');
 }
 
 // Controlar el ingreso del texto (Solo Minúsculas y sin caracteres especiales)
@@ -51,17 +51,17 @@ const check = (e) => {
     patron = /[a-z\s]/;
     tecla_final = String.fromCharCode(tecla);
     if (!patron.test(tecla_final)) {
-        alerts('Solo se permiten letras minúsculas y sin acentos', 'danger', 2000, '.div_palabra', '.small');
+        alerts('Solo se permiten letras minúsculas y sin acentos', 'danger', 2000, '.div_palabra', '.small', 'bi bi-x');
         disableTextArea();
     }
     return patron.test(tecla_final);
 }
 
 // Alerta de Contenido COPIADO
-const alerts = (mensaje, colorCss, time, contain, area) => {
+const alerts = (mensaje, colorCss, time, contain, area, icon) => {
 
     const div = document.createElement('div');
-    div.className = `alert alert-${colorCss} position-absolute`;
+    div.className = `alert alert-${colorCss} position-absolute ${icon}`;
     div.appendChild(document.createTextNode(mensaje));
 
     const container = document.querySelector(contain);
