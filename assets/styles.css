@@ -9,6 +9,13 @@ body {
   background: radial-gradient(rgba(184, 213, 230, 0.699), rgba(176, 223, 255, 0.788), rgba(9, 85, 173, 0.733));
   background-attachment: fixed;
 }
+body main .container-fluid .row .divHeader h1 {
+  font-weight: 800;
+  text-shadow: 0 2px 7px rgba(8, 94, 121, 0.349);
+}
+body main .container-fluid .row .divHeader p {
+  color: rgb(77, 77, 77);
+}
 body main .container-fluid .row .div1 {
   box-shadow: -10px 15px 35px rgb(0, 0, 0);
 }
@@ -41,7 +48,7 @@ body main .container-fluid .row .div2 {
   background: radial-gradient(rgb(59, 59, 59), rgb(33, 34, 34), rgb(0, 0, 0));
 }
 body main .container-fluid .row .div2 textarea {
-  background-color: rgba(6, 63, 129, 0.925);
+  background-color: rgba(6, 84, 129, 0.925);
 }
 body main .container-fluid .row #logoAlura {
   animation: logoSlider 1.4s ease-in-out;
@@ -117,9 +124,6 @@ body .container footer a:nth-child(3) {
   }
 }
 @media (max-width: 992px) {
-  main .container-fluid .row {
-    gap: 1rem;
-  }
   main .container-fluid .row .divHeader {
     margin-top: 4rem;
   }
@@ -129,6 +133,11 @@ body .container footer a:nth-child(3) {
   main .container-fluid .row .div1 form .divButtons button {
     margin: 10px auto;
     width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  main .container-fluid .row {
+    gap: 1rem;
   }
 }
 

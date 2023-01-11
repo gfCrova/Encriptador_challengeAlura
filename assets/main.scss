@@ -13,6 +13,16 @@ body {
     main {
         .container-fluid {
             .row {
+                .divHeader {
+                    h1 {
+                        font-weight: 800;
+                        text-shadow: 0 2px 7px rgba(8, 94, 121, 0.349);
+                    }
+                    p {
+                        color: rgb(77, 77, 77);
+                    }
+                    
+                }
                 .div1 {
                     box-shadow: -10px 15px 35px rgba(0, 0, 0);
                     form {
@@ -47,7 +57,7 @@ body {
                     box-shadow: 10px 15px 35px rgba(255, 255, 255, 0.562);
                     background: radial-gradient( rgb(59, 59, 59), rgb(33, 34, 34), rgb(0, 0, 0));
                     textarea {
-                        background-color: rgba(6, 63, 129, 0.925);
+                        background-color: rgba(6, 84, 129, 0.925);
                     }
                 }
 
@@ -151,7 +161,6 @@ body {
     main {
         .container-fluid {
             .row {
-                gap: 1rem;
                 .divHeader {
                     margin-top:4rem;
                 }
@@ -166,6 +175,16 @@ body {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        .container-fluid {
+            .row {
+                gap: 1rem;
             }
         }
     }
