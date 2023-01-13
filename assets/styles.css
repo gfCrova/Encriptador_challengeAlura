@@ -36,10 +36,6 @@ body main .container-fluid .row button {
   border: none;
   border-radius: 10px;
 }
-body main .container-fluid .row button:hover {
-  transform: scale(1.1);
-  transition: all 0.4s;
-}
 body main .container-fluid .row button:active {
   transform: scale(0.9);
 }
@@ -62,10 +58,36 @@ body main .container-fluid .row #imgNoMensaje {
   animation: imgSlider 1.4s ease-in-out;
 }
 body main .container-fluid .row #btnEncryp {
+  font-size: 1.2rem;
+  font-weight: 800;
+  background: linear-gradient(180deg, white, rgba(255, 174, 0, 0.685), rgba(226, 155, 0, 0.822), rgba(110, 77, 5, 0.342)) !important;
   animation: slider 1s ease-in-out;
 }
+body main .container-fluid .row #btnEncryp:hover {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 174, 0, 0.685), rgba(226, 155, 0, 0.822), rgba(110, 77, 5, 0.596)) !important;
+  transition: all 0.2s;
+}
 body main .container-fluid .row #btnDesencryp {
+  font-size: 1.2rem;
+  font-weight: 800;
+  background: linear-gradient(180deg, white, rgba(255, 174, 0, 0.685), rgba(226, 155, 0, 0.822), rgba(110, 77, 5, 0.342)) !important;
   animation: slider2 1.2s ease-in-out;
+}
+body main .container-fluid .row #btnDesencryp:hover {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 174, 0, 0.685), rgba(226, 155, 0, 0.822), rgba(110, 77, 5, 0.596)) !important;
+  transition: all 0.2s;
+}
+body main .container-fluid .row #btnCopy {
+  font-size: 1.2rem;
+  font-weight: 800;
+  background: linear-gradient(180deg, white, rgba(255, 174, 0, 0.685), rgba(226, 155, 0, 0.822), rgba(110, 77, 5, 0.342)) !important;
+}
+body main .container-fluid .row #btnCopy:hover {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 174, 0, 0.685), rgba(226, 155, 0, 0.822), rgba(110, 77, 5, 0.596)) !important;
+  transition: all 0.2s;
 }
 body .container footer a {
   color: black;
