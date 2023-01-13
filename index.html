@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 
-<body class="bg-dark">
+<body>
     <main class="my-4 pb-5">
         <div class="container-fluid">
             <div class="row d-flex gap-3 justify-content-center mx-auto">
@@ -30,12 +30,12 @@
                     <form action="" class="form-control">
                         <div class="div_palabra position-relative p-3">
                             <label for="palabra" class="form-label fw-bold"></label>
-                            <textarea type="text" class="form-control fs-4 border-2 w-100" name="palabra" id="palabra" onkeypress="return check(event)" placeholder="Ingresa el texto aquí.." rows="10"></textarea>
+                            <textarea type="text" class="form-control fs-4 w-100" name="palabra" id="palabra" onkeypress="return check(event)" placeholder="Ingresa el texto aquí.." rows="10"></textarea>
                             <small class="small text-light bi bi-exclamation-circle"><em> Solo letras minúsculas y sin acentos</em></small>
                         </div>
                         <div class="divButtons pb-4 px-3">
-                            <button id="btnEncryp" class="btn btn-dark bg-gradient p-3" type="button" onclick="encriptar();"><i class="bi bi-envelope-dash-fill"> Encriptar</i></button>
-                            <button id="btnDesencryp" class="btn btn-dark bg-gradient p-3" type="button" onclick="desencriptar();"><i class="bi bi-envelope-open-fill"> Desencriptar</i></button>
+                            <button id="btnEncryp" class="btn bg-gradient p-3" type="button" onclick="encriptar();"><i class="bi bi-envelope-dash-fill"> Encriptar</i></button>
+                            <button id="btnDesencryp" class="btn bg-gradient p-3" type="button" onclick="desencriptar();"><i class="bi bi-envelope-open-fill"> Desencriptar</i></button>
                         </div>
                     </form>
                 </div>
@@ -45,7 +45,7 @@
                             <label for="mensaje" class="form-label fw-bold"></label>
                             <textarea type="text" class="form-control text-light fs-4 border-0 w-100" name="mensaje" id="mensaje" rows="10" readonly></textarea>
                             <button id="btnCopy"
-                                class="btn btn-outline-light bg-gradient btn-lg border-0 rounded-3 mt-5 mb-2"
+                                class="btn btn-lg rounded-3 mt-5 mb-2"
                                 type="button" onclick="copyText();"><i class="bi bi-clipboard2"> Copiar</i></button>
                         </div>
                         <div id="div_imagen" class="position-absolute top-0 mt-5 px-5">
