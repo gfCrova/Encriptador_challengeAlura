@@ -81,7 +81,7 @@ body {
 
                 #logoAlura {
                     //animation: logoSlider 1.4s ease-in-out;
-                    animation: rotateInf 2.5s infinite linear;
+                    animation: rotateInf 2.5s infinite ease-in-out;
                     &:hover {
                         transform: scale(1.1);
                         cursor: pointer;

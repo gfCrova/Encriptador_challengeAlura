@@ -47,7 +47,7 @@ body main .container-fluid .row .div2 textarea {
   background: linear-gradient(180deg, rgba(6, 84, 129, 0.925), rgb(7, 34, 65), rgba(0, 0, 0, 0.712));
 }
 body main .container-fluid .row #logoAlura {
-  animation: rotateInf 2.5s infinite linear;
+  animation: rotateInf 2.5s infinite ease-in-out;
 }
 body main .container-fluid .row #logoAlura:hover {
   transform: scale(1.1);
