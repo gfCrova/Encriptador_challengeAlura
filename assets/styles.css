@@ -47,7 +47,7 @@ body main .container-fluid .row .div2 textarea {
   background: linear-gradient(180deg, rgba(6, 84, 129, 0.925), rgb(7, 34, 65), rgba(0, 0, 0, 0.712));
 }
 body main .container-fluid .row #logoAlura {
-  animation: logoSlider 1.4s ease-in-out;
+  animation: rotateInf 2.5s infinite linear;
 }
 body main .container-fluid .row #logoAlura:hover {
   transform: scale(1.1);
@@ -68,16 +68,32 @@ body main .container-fluid .row #btnEncryp:hover {
   background: linear-gradient(0deg, rgba(255, 174, 0, 0.685), rgba(226, 155, 0, 0.822), rgba(110, 77, 5, 0.596)) !important;
   transition: all 0.2s;
 }
+@keyframes slider {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 body main .container-fluid .row #btnDesencryp {
   font-size: 1.2rem;
   font-weight: 800;
   background: linear-gradient(180deg, white, rgba(255, 174, 0, 0.685), rgba(226, 155, 0, 0.822), rgba(110, 77, 5, 0.342)) !important;
-  animation: slider2 1.2s ease-in-out;
+  animation: slider 1.7s ease-in-out;
 }
 body main .container-fluid .row #btnDesencryp:hover {
   color: rgb(255, 255, 255);
   background: linear-gradient(0deg, rgba(255, 174, 0, 0.685), rgba(226, 155, 0, 0.822), rgba(110, 77, 5, 0.596)) !important;
   transition: all 0.2s;
+}
+@keyframes slider {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 body main .container-fluid .row #btnCopy {
   font-size: 1.2rem;
@@ -105,22 +121,6 @@ body .container footer a:nth-child(3) {
   animation: items 1.6s ease-in-out;
 }
 
-@keyframes slider {
-  from {
-    transform: translateX(-1000px);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-@keyframes slider2 {
-  from {
-    transform: translateX(-3000px);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
 @keyframes imgSlider {
   0% {
     transform: scale(0) translateX(350px);
@@ -135,6 +135,17 @@ body .container footer a:nth-child(3) {
   }
   100% {
     transform: scale(1) translateX(0);
+  }
+}
+@keyframes rotateInf {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
   }
 }
 @keyframes items {
