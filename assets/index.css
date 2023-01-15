@@ -1,13 +1,13 @@
 :root {
   --white: #ffffff;
   --black: #000000;
-  --bg-body: radial-gradient(rgba(166, 235, 240, 0.911) ,rgba(123, 239, 247, 0.808), rgba(9, 136, 209, 0.76), rgba(86, 164, 236, 0.808), rgba(123, 239, 247, 0.808));
+  --bg-body: radial-gradient(rgba(248, 182, 107, 0.911) ,rgba(123, 239, 247, 0.808), rgba(224, 158, 34, 0.781), rgba(9, 136, 209, 0.76), rgba(86, 164, 236, 0.808), rgba(247, 224, 123, 0.808));
   --bg-form: radial-gradient( rgb(176, 223, 255), rgb(19, 100, 194), rgb(6, 64, 129));
   --bg-light-textarea: linear-gradient(180deg, rgb(233, 233, 233), rgb(156, 156, 156), rgb(138, 137, 137));
   --bg-dark-textarea: linear-gradient(180deg, rgba(5, 98, 151, 0.753), rgba(21, 80, 148, 0.651));
   --bg-dark-div2: radial-gradient( rgb(59, 59, 59), rgb(33, 34, 34), rgb(0, 0, 0));
-  --light-shadow: 0 2px 7px rgba(255, 255, 255, 0.349);
-  --box-dark-shadow: -10px 15px 35px rgba(0, 0, 0);
+  --light-shadow: 0px 15px 25px rgba(255, 255, 255, 0.349);
+  --box-dark-shadow: 0px 15px 25px rgba(0, 0, 0);
   --box-light-shadow: 10px 15px 35px rgba(255, 255, 255, 0.562);
   --btn-bg-color: linear-gradient(180deg, white, rgba(255, 174, 0, 0.685), rgba(226, 155, 0, 0.822), rgba(110, 77, 5, 0.342));
 }
@@ -32,7 +32,7 @@ body main .container-fluid .row .divHeader h1 {
   text-shadow: var(--light-shadow);
 }
 body main .container-fluid .row .div1 {
-  box-shadow: var(--box-light-shadow);
+  box-shadow: var(--box-dark-shadow);
 }
 body main .container-fluid .row .div1 form {
   border: 0;
