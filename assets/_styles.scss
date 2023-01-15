@@ -130,32 +130,3 @@ body {
         }
     }
 }
-
-.draw {
-    overflow: hidden;
-    position: relative;
-}
-
-.draw::before,
-.draw::after {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    border: 2px solid transparent;
-    width: 0;
-    height: 0;
-}
-
-.draw::before {
-    top: 0;
-    left: 0;
-    border-top-color: #53f9ff;
-    border-right-color: #53f9ff;
-    animation: border 1.5s infinite;
-}
-
-.draw::after {
-    bottom: 0;
-    right: 0;
-    animation: border 1.5s 0.7s infinite, borderColor 1.5s 0.7s infinite;
-}
