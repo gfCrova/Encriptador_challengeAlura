@@ -1,0 +1,27 @@
+@mixin btn{
+    font-size: 1.2rem;
+    font-weight: 800;
+    background: linear-gradient(180deg, white, rgba(255, 174, 0, 0.685), rgba(226, 155, 0, 0.822), rgba(110, 77, 5, 0.342)) !important;
+    &:hover {
+        color: rgb(255, 255, 255);
+        //background: linear-gradient(0deg, rgba(255, 174, 0, 0.685), rgba(226, 155, 0, 0.822), rgba(110, 77, 5, 0.596)) !important;
+        transition: all 0.2s;
+        transform: translateY(-0.4rem);
+    }
+    &:active {
+        transform: scale(0.8);
+    }
+}
+
+@mixin moveSliders($move, $seconds) {
+    animation: slider $seconds ease-in-out;
+    @keyframes slider {
+        from {
+            transform: translateX($move);
+        }
+    
+        to {
+            transform: translateX(0);
+        }
+    }
+}

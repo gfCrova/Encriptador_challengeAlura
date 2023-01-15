@@ -1,39 +1,16 @@
+@use 'mixins';
+
 *,
 ::after,
 ::before {
     box-sizing: border-box;
 }
 
-@mixin btn{
-    font-size: 1.2rem;
-    font-weight: 800;
-    background: linear-gradient(180deg, white, rgba(255, 174, 0, 0.685), rgba(226, 155, 0, 0.822), rgba(110, 77, 5, 0.342)) !important;
-    &:hover {
-        color: rgb(255, 255, 255);
-        background: linear-gradient(0deg, rgba(255, 174, 0, 0.685), rgba(226, 155, 0, 0.822), rgba(110, 77, 5, 0.596)) !important;
-        transition: all 0.2s;
-    }
-}
-
-@mixin moveSliders($move, $seconds) {
-    animation: slider $seconds ease-in-out;
-    @keyframes slider {
-        from {
-            transform: translateX($move);
-        }
-    
-        to {
-            transform: translateX(0);
-        }
-    }
-}
-
 body {
     font-family: 'Rubik', sans-serif;
     //background: linear-gradient(0deg, black, rgb(8, 88, 119), rgb(76, 89, 94)) no-repeat;
-    background: radial-gradient(rgba(184, 213, 230, 0.699) ,rgba(176, 223, 255, 0.788), rgba(9, 85, 173, 0.733));
-    background-attachment: fixed;
-
+    //background-attachment: fixed;
+    background: radial-gradient(rgba(184, 213, 230, 0.699) ,rgba(176, 223, 255, 0.685), rgba(9, 85, 173, 0.692));
     main {
         .container-fluid {
             .row {
@@ -95,16 +72,16 @@ body {
                 }
 
                 #btnEncryp {
-                    @include btn();
-                    @include moveSliders(-1000px, 1s);
+                    @include mixins.btn();
+                    @include mixins.moveSliders(-1000px, 1s);
                 }
 
                 #btnDesencryp {
-                    @include btn();
-                    @include moveSliders(-1000px, 1.7s);
+                    @include mixins.btn();
+                    @include mixins.moveSliders(-1000px, 1.7s);
                 }
                 #btnCopy {
-                    @include btn();
+                    @include mixins.btn();
                 }
             }
         }

@@ -6,8 +6,7 @@
 
 body {
   font-family: "Rubik", sans-serif;
-  background: radial-gradient(rgba(184, 213, 230, 0.699), rgba(176, 223, 255, 0.788), rgba(9, 85, 173, 0.733));
-  background-attachment: fixed;
+  background: radial-gradient(rgba(184, 213, 230, 0.699), rgba(176, 223, 255, 0.685), rgba(9, 85, 173, 0.692));
 }
 body main .container-fluid .row .divHeader h1 {
   font-weight: 800;
@@ -66,8 +65,11 @@ body main .container-fluid .row #btnEncryp {
 }
 body main .container-fluid .row #btnEncryp:hover {
   color: rgb(255, 255, 255);
-  background: linear-gradient(0deg, rgba(255, 174, 0, 0.685), rgba(226, 155, 0, 0.822), rgba(110, 77, 5, 0.596)) !important;
   transition: all 0.2s;
+  transform: translateY(-0.4rem);
+}
+body main .container-fluid .row #btnEncryp:active {
+  transform: scale(0.8);
 }
 @keyframes slider {
   from {
@@ -85,8 +87,11 @@ body main .container-fluid .row #btnDesencryp {
 }
 body main .container-fluid .row #btnDesencryp:hover {
   color: rgb(255, 255, 255);
-  background: linear-gradient(0deg, rgba(255, 174, 0, 0.685), rgba(226, 155, 0, 0.822), rgba(110, 77, 5, 0.596)) !important;
   transition: all 0.2s;
+  transform: translateY(-0.4rem);
+}
+body main .container-fluid .row #btnDesencryp:active {
+  transform: scale(0.8);
 }
 @keyframes slider {
   from {
@@ -103,8 +108,11 @@ body main .container-fluid .row #btnCopy {
 }
 body main .container-fluid .row #btnCopy:hover {
   color: rgb(255, 255, 255);
-  background: linear-gradient(0deg, rgba(255, 174, 0, 0.685), rgba(226, 155, 0, 0.822), rgba(110, 77, 5, 0.596)) !important;
   transition: all 0.2s;
+  transform: translateY(-0.4rem);
+}
+body main .container-fluid .row #btnCopy:active {
+  transform: scale(0.8);
 }
 body .container footer a {
   color: black;
