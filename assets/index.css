@@ -3,8 +3,8 @@
   --black: #000000;
   --bg-body: radial-gradient(rgba(166, 235, 240, 0.911) ,rgba(123, 239, 247, 0.808), rgba(9, 136, 209, 0.76), rgba(86, 164, 236, 0.808), rgba(123, 239, 247, 0.808));
   --bg-form: radial-gradient( rgb(176, 223, 255), rgb(19, 100, 194), rgb(6, 64, 129));
-  --bg-light-textarea: linear-gradient(180deg, rgb(233, 233, 233), rgb(126, 126, 126));
-  --bg-dark-textarea: linear-gradient(180deg, rgba(6, 84, 129, 0.925), rgb(7, 34, 65), rgba(0, 0, 0, 0.712));
+  --bg-light-textarea: linear-gradient(180deg, rgb(233, 233, 233), rgb(156, 156, 156), rgb(138, 137, 137));
+  --bg-dark-textarea: linear-gradient(180deg, rgba(5, 98, 151, 0.753), rgba(21, 80, 148, 0.651));
   --bg-dark-div2: radial-gradient( rgb(59, 59, 59), rgb(33, 34, 34), rgb(0, 0, 0));
   --light-shadow: 0 2px 7px rgba(255, 255, 255, 0.349);
   --box-dark-shadow: -10px 15px 35px rgba(0, 0, 0);
@@ -32,7 +32,7 @@ body main .container-fluid .row .divHeader h1 {
   text-shadow: var(--light-shadow);
 }
 body main .container-fluid .row .div1 {
-  box-shadow: var(--box-dark-shadow);
+  box-shadow: var(--box-light-shadow);
 }
 body main .container-fluid .row .div1 form {
   border: 0;
@@ -45,6 +45,7 @@ body main .container-fluid .row .div1 form .divButtons {
   gap: 1.5rem;
 }
 body main .container-fluid .row .div1 form textarea {
+  border: 0;
   background: var(--bg-light-textarea);
 }
 body main .container-fluid .row button {
