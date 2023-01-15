@@ -1,0 +1,32 @@
+@media (max-width: 992px) {
+    main {
+        .container-fluid {
+            .row {
+                .divHeader {
+                    margin-top:4rem;
+                }
+                .div1 {
+                    form {
+                        .divButtons {
+                            display: block !important;
+                            button {
+                                margin: 10px auto;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        .container-fluid {
+            .row {
+                gap: 1rem;
+            }
+        }
+    }
+}
