@@ -1,0 +1,213 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --bg-body: radial-gradient(rgba(166, 235, 240, 0.911) ,rgba(123, 239, 247, 0.808), rgba(9, 136, 209, 0.76), rgba(86, 164, 236, 0.808), rgba(123, 239, 247, 0.808));
+  --bg-form: radial-gradient( rgb(176, 223, 255), rgb(19, 100, 194), rgb(6, 64, 129));
+  --bg-light-textarea: linear-gradient(180deg, rgb(233, 233, 233), rgb(126, 126, 126));
+  --bg-dark-textarea: linear-gradient(180deg, rgba(6, 84, 129, 0.925), rgb(7, 34, 65), rgba(0, 0, 0, 0.712));
+  --bg-dark-div2: radial-gradient( rgb(59, 59, 59), rgb(33, 34, 34), rgb(0, 0, 0));
+  --light-shadow: 0 2px 7px rgba(255, 255, 255, 0.349);
+  --box-dark-shadow: -10px 15px 35px rgba(0, 0, 0);
+  --box-light-shadow: 10px 15px 35px rgba(255, 255, 255, 0.562);
+  --btn-bg-color: linear-gradient(180deg, white, rgba(255, 174, 0, 0.685), rgba(226, 155, 0, 0.822), rgba(110, 77, 5, 0.342));
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-body);
+  background-size: 600% 200%;
+  position: relative;
+  animation: cambiar 18s ease-in-out infinite;
+}
+body main .container-fluid .row .divHeader h1 {
+  font-weight: 800;
+  text-shadow: var(--light-shadow);
+}
+body main .container-fluid .row .div1 {
+  box-shadow: var(--box-dark-shadow);
+}
+body main .container-fluid .row .div1 form {
+  border: 0;
+  border-radius: 0;
+  background: var(--bg-form);
+}
+body main .container-fluid .row .div1 form .divButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+body main .container-fluid .row .div1 form textarea {
+  background: var(--bg-light-textarea);
+}
+body main .container-fluid .row button {
+  min-width: 175px;
+  border: none;
+  border-radius: 10px;
+}
+body main .container-fluid .row button:active {
+  transform: scale(0.9);
+}
+body main .container-fluid .row .div2 {
+  box-shadow: var(--box-light-shadow);
+  background: var(--bg-dark-div2);
+}
+body main .container-fluid .row .div2 textarea {
+  background: var(--bg-dark-textarea);
+}
+body main .container-fluid .row #logoAlura {
+  animation: rotateInf 2.5s infinite ease-in-out;
+}
+body main .container-fluid .row #logoAlura:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.5s transform;
+}
+body main .container-fluid .row #imgNoMensaje {
+  animation: imgSlider 1.4s ease-in-out;
+}
+body main .container-fluid .row #btnEncryp {
+  font-size: 1.2rem;
+  font-weight: 800;
+  background: var(--btn-bg-color) !important;
+  animation: slider 1s ease-in-out;
+}
+body main .container-fluid .row #btnEncryp:hover {
+  color: var(--white);
+  transition: all 0.2s;
+  transform: translateY(-0.4rem);
+}
+body main .container-fluid .row #btnEncryp:active {
+  transform: scale(0.8);
+}
+@keyframes slider {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+body main .container-fluid .row #btnDesencryp {
+  font-size: 1.2rem;
+  font-weight: 800;
+  background: var(--btn-bg-color) !important;
+  animation: slider 1.7s ease-in-out;
+}
+body main .container-fluid .row #btnDesencryp:hover {
+  color: var(--white);
+  transition: all 0.2s;
+  transform: translateY(-0.4rem);
+}
+body main .container-fluid .row #btnDesencryp:active {
+  transform: scale(0.8);
+}
+@keyframes slider {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+body main .container-fluid .row #btnCopy {
+  font-size: 1.2rem;
+  font-weight: 800;
+  background: var(--btn-bg-color) !important;
+}
+body main .container-fluid .row #btnCopy:hover {
+  color: var(--white);
+  transition: all 0.2s;
+  transform: translateY(-0.4rem);
+}
+body main .container-fluid .row #btnCopy:active {
+  transform: scale(0.8);
+}
+body .container footer a {
+  color: black;
+}
+body .container footer a:hover {
+  transform: scale(1.1);
+}
+body .container footer a:nth-child(1) {
+  animation: items 0.7s ease-in-out;
+}
+body .container footer a:nth-child(2) {
+  animation: items 1.2s ease-in-out;
+}
+body .container footer a:nth-child(3) {
+  animation: items 1.6s ease-in-out;
+}
+
+@keyframes imgSlider {
+  0% {
+    transform: scale(0) translateX(350px);
+  }
+  100% {
+    transform: scale(1) translateX(0);
+  }
+}
+@keyframes logoSlider {
+  0% {
+    transform: scale(0) translateX(-350px);
+  }
+  100% {
+    transform: scale(1) translateX(0);
+  }
+}
+@keyframes rotateInf {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes items {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes cambiar {
+  0% {
+    background-position: 0% -150%;
+  }
+  50% {
+    background-position: 150% 250%;
+  }
+  100% {
+    background-position: 0% -150%;
+  }
+}
+@media (max-width: 992px) {
+  main .container-fluid .row .divHeader {
+    margin-top: 4rem;
+  }
+  main .container-fluid .row .div1 form .divButtons {
+    display: block !important;
+  }
+  main .container-fluid .row .div1 form .divButtons button {
+    margin: 10px auto;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  main .container-fluid .row {
+    gap: 1rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
