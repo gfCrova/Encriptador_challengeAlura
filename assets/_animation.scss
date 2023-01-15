@@ -41,3 +41,17 @@
         transform: scale(1);
     }
 }
+
+@keyframes cambiar {
+    0% {
+        background-position: 0% -150%;
+    }
+
+    50% {
+        background-position: 150% 250%;
+    }
+
+    100% {
+        background-position: 0% -150%;
+    }
+}
