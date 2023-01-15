@@ -1,11 +1,10 @@
+<img align="left" src="https://user-images.githubusercontent.com/103906625/212557048-0d50d7ba-5b74-4eb9-a550-5bc74395baeb.png" width="200"/>
+<h1>Encriptador/Desencriptador de Texto</h1>
 
-<h1 align="center">Encriptador/Desencriptador de Texto</h1> <a href="https://www.aluracursos.com/?gclid=Cj0KCQiAtvSdBhD0ARIsAPf8oNkNDV1JY1TMuI1RAyXhI1vuyR-rOMjV8nLxElHwKbmcdRwRgxL1rg8aAqcDEALw_wcB"><img align="right"  src="https://www.oracle.com/a/ocom/img/rc56-customerlogo-alura-latam.png" width="150px"/></a>
+<h3> Alura Challenge ONE</h3> 
+<br><br><br>
 
-### Alura Challenge ONE
-
-<br>
-
-Una App que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
+> Una App que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
 
 Las "llaves" de encriptación que se utilizan son las siguientes:
 
@@ -45,4 +44,5 @@ Por ejemplo:
 
   <li><a href="https://www.aluracursos.com/blog/git-y-github-que-son-y-primeros-pasos" target="_blank" rel="noreferrer ugc nofollow" class="atlaskit-smart-link"><div class="js-react-root"><span class="loader-wrapper"><span><span aria-expanded="false" aria-haspopup="true"><a href="https://www.aluracursos.com/blog/git-y-github-que-son-y-primeros-pasos" tabindex="0" role="button" data-testid="inline-card-resolved-view" class="css-1llm9d6"><span class="css-1awfwlv"><span class="css-1n3444m"><span class="css-w2w4jx"></span><img class="smart-link-icon css-qq5phv" width="25" src="https://www.aluracursos.com/assets/favicon.1647533644.ico" data-testid="inline-card-icon-and-title-image"></span><span class="smart-link-title-wrapper css-0"> Git y Github: que son y primeros pasos | Alura Cursos Online</span></span></a></span></span></span></div></a></li>
   </ul>
+  <a href="https://www.aluracursos.com/?gclid=Cj0KCQiAtvSdBhD0ARIsAPf8oNkNDV1JY1TMuI1RAyXhI1vuyR-rOMjV8nLxElHwKbmcdRwRgxL1rg8aAqcDEALw_wcB"><img align="right"  src="https://www.oracle.com/a/ocom/img/rc56-customerlogo-alura-latam.png" width="150px"/></a>
 </div>
