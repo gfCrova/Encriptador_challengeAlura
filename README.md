@@ -1,11 +1,11 @@
+<img align="left" src="https://user-images.githubusercontent.com/103906625/212557048-0d50d7ba-5b74-4eb9-a550-5bc74395baeb.png" width="200"/>
+<h1>Encriptador/Desencriptador de Texto <a href="https://www.aluracursos.com/?gclid=Cj0KCQiAtvSdBhD0ARIsAPf8oNkNDV1JY1TMuI1RAyXhI1vuyR-rOMjV8nLxElHwKbmcdRwRgxL1rg8aAqcDEALw_wcB"><img align="right"  src="https://www.oracle.com/a/ocom/img/rc56-customerlogo-alura-latam.png" width="150px"/></a></h1><br>
 
-<h1 align="center">Encriptador/Desencriptador de Texto</h1> <a href="https://www.aluracursos.com/?gclid=Cj0KCQiAtvSdBhD0ARIsAPf8oNkNDV1JY1TMuI1RAyXhI1vuyR-rOMjV8nLxElHwKbmcdRwRgxL1rg8aAqcDEALw_wcB"><img align="right"  src="https://www.oracle.com/a/ocom/img/rc56-customerlogo-alura-latam.png" width="150px"/></a>
-
-### Alura Challenge ONE
+### Alura Challenge ONE 
 
 <br>
 
-Una App que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
+> Una App que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
 
 Las "llaves" de encriptación que se utilizan son las siguientes:
 
