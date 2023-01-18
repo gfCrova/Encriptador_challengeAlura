@@ -1,3 +1,24 @@
+.darkBg {
+  background: radial-gradient(rgb(0, 3, 10), rgb(1, 13, 31), rgb(0, 0, 0));
+  background-size: 600% 200%;
+  position: relative;
+  animation: cambiar 8s ease-in-out infinite;
+}
+.darkBg main .container-fluid .row .divHeader h1 {
+  color: var(--white);
+  font-weight: 800;
+  text-shadow: none;
+}
+.darkBg main .container-fluid .row .divHeader p {
+  color: var(--white);
+}
+.darkBg main .container-fluid .row input {
+  background-color: black;
+}
+.darkBg div footer * {
+  color: var(--white);
+}
+
 :root {
   --white: #ffffff;
   --black: #000000;
@@ -8,7 +29,7 @@
   --bg-dark-div2: radial-gradient( rgb(7, 12, 27), rgb(1, 5, 17), rgb(0, 0, 0));
   --light-shadow: 0px 15px 25px rgba(255, 255, 255, 0.349);
   --box-dark-shadow: 0px 15px 25px rgba(0, 0, 0);
-  --box-light-shadow: 10px 15px 35px rgba(255, 255, 255, 0.562);
+  --box-light-shadow: 0px 0px 15px rgba(255, 255, 255, 0.562);
   --btn-bg-color: linear-gradient(180deg, rgba(156, 243, 239, 0.877), rgba(66, 252, 243, 0.89), rgba(15, 114, 160, 0.932));
 }
 
