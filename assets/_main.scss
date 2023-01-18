@@ -4,10 +4,10 @@
     --white: #ffffff;
     --black: #000000;
     --bg-body: radial-gradient(rgba(248, 182, 107, 0.911) ,rgba(123, 239, 247, 0.808), rgba(224, 158, 34, 0.781), rgba(9, 136, 209, 0.76), rgba(86, 164, 236, 0.808), rgba(247, 224, 123, 0.808));;
-    --bg-form: radial-gradient( rgb(176, 223, 255), rgb(19, 100, 194), rgb(6, 64, 129));
+    --bg-form: radial-gradient( rgb(176, 223, 255), rgb(6, 64, 129), rgba(7, 12, 27, 0.897));
     --bg-light-textarea: linear-gradient(180deg, rgb(233, 233, 233), rgb(156, 156, 156), rgb(138, 137, 137));
     --bg-dark-textarea: linear-gradient(180deg, rgba(5, 98, 151, 0.753), rgba(21, 80, 148, 0.651));
-    --bg-dark-div2: radial-gradient( rgb(59, 59, 59), rgb(33, 34, 34), rgb(0, 0, 0));
+    --bg-dark-div2: radial-gradient( rgb(7, 12, 27), rgb(1, 5, 17), rgb(0, 0, 0));
     --light-shadow: 0px 15px 25px rgba(255, 255, 255, 0.349);
     --box-dark-shadow: 0px 15px 25px rgba(0, 0, 0);
     --box-light-shadow: 10px 15px 35px rgba(255, 255, 255, 0.562);
@@ -38,10 +38,11 @@ body {
                     }
                 }
                 .div1 {
-                    box-shadow: var(--box-dark-shadow);
+                    box-shadow: var(--box-light-shadow);
+                    border-radius: 15px;
                     form {
                         border: 0;
-                        border-radius: 0;
+                        border-radius: 15px;
                         background: var(--bg-form);
                         .divButtons {
                             display: flex;
@@ -66,8 +67,9 @@ body {
                 .div2 {
                     box-shadow: var(--box-light-shadow);
                     background: var(--bg-dark-div2);
+                    border-radius: 15px;
                     textarea {
-                        background: var(--bg-dark-textarea);
+                        background: transparent;
                     }
                 }
 
