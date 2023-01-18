@@ -1,7 +1,7 @@
 
 
 .darkBg {
-    background: radial-gradient(rgb(0, 3, 10), rgb(1, 13, 31), rgb(0, 0, 0));
+    background: radial-gradient(rgb(3, 25, 54), rgb(1, 13, 31), rgb(0, 0, 0));
     background-size: 600% 200%;
     position: relative;
     animation: cambiar 8s ease-in-out infinite;
@@ -17,9 +17,44 @@
                     p {
                         color: var(--white);
                     }
+                    strong {
+                        color: var(--white);
+                    }
                 }
                 input {
+                    box-shadow: 0 0 8px white;
                     background-color: black;
+                }
+                .div1 {
+                    box-shadow: var(--box-light-shadow);
+                    form {
+                        //color: var(--white);
+                        background: var(--bg-dark-form);
+                        .divButtons {
+                            display: flex;
+                            justify-content: center;
+                            gap: 1.5rem;
+                        }
+                        textarea {
+                            border: 0;
+                            color: var(--white);
+                            background: transparent;
+                            &::placeholder {
+                                color: rgba(196, 196, 196, 0.938);
+                            }
+                        }
+                        .small {
+                            color: var(--white);
+                        }
+                    }
+                }
+                .div2 {
+                    box-shadow: var(--box-light-shadow);
+                    background: var(--bg-dark-div2);
+                    color: var(--white);
+                    textarea {
+                        color: var(--white);
+                    }
                 }
             }
         }
