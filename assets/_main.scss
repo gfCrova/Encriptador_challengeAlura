@@ -39,6 +39,9 @@ body {
                         text-shadow: var(--light-shadow);
                     }
                 }
+                input {
+                    cursor: pointer;
+                }
                 .div1 {
                     box-shadow: var(--box-light-shadow);
                     border-radius: 15px;

@@ -52,6 +52,9 @@ body main .container-fluid .row .divHeader h1 {
   font-weight: 800;
   text-shadow: var(--light-shadow);
 }
+body main .container-fluid .row input {
+  cursor: pointer;
+}
 body main .container-fluid .row .div1 {
   box-shadow: var(--box-light-shadow);
   border-radius: 15px;
