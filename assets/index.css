@@ -1,5 +1,5 @@
 .darkBg {
-  background: radial-gradient(rgb(0, 3, 10), rgb(1, 13, 31), rgb(0, 0, 0));
+  background: radial-gradient(rgb(3, 25, 54), rgb(1, 13, 31), rgb(0, 0, 0));
   background-size: 600% 200%;
   position: relative;
   animation: cambiar 8s ease-in-out infinite;
@@ -12,25 +12,58 @@
 .darkBg main .container-fluid .row .divHeader p {
   color: var(--white);
 }
+.darkBg main .container-fluid .row .divHeader strong {
+  color: var(--white);
+}
 .darkBg main .container-fluid .row input {
+  box-shadow: 0 0 8px white;
   background-color: black;
+}
+.darkBg main .container-fluid .row .div1 {
+  box-shadow: var(--box-light-shadow);
+}
+.darkBg main .container-fluid .row .div1 form {
+  background: var(--bg-dark-form);
+}
+.darkBg main .container-fluid .row .div1 form .divButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.darkBg main .container-fluid .row .div1 form textarea {
+  border: 0;
+  color: var(--white);
+  background: transparent;
+}
+.darkBg main .container-fluid .row .div1 form textarea::placeholder {
+  color: rgba(196, 196, 196, 0.938);
+}
+.darkBg main .container-fluid .row .div1 form .small {
+  color: var(--white);
+}
+.darkBg main .container-fluid .row .div2 {
+  box-shadow: var(--box-light-shadow);
+  background: var(--bg-dark-div2);
+  color: var(--white);
+}
+.darkBg main .container-fluid .row .div2 textarea {
+  color: var(--white);
 }
 .darkBg div footer * {
   color: var(--white);
 }
 
 :root {
-  --white: #ffffff;
-  --black: #000000;
+  --white: #fffffff5;
+  --black: #000000f5;
   --bg-body: radial-gradient(rgba(248, 182, 107, 0.911) ,rgba(123, 239, 247, 0.808), rgba(224, 158, 34, 0.781), rgba(9, 136, 209, 0.76), rgba(86, 164, 236, 0.808), rgba(247, 224, 123, 0.808));
-  --bg-form: radial-gradient( rgb(176, 223, 255), rgb(6, 64, 129), rgba(7, 12, 27, 0.897));
-  --bg-light-textarea: linear-gradient(180deg, rgb(233, 233, 233), rgb(156, 156, 156), rgb(138, 137, 137));
+  --bg-dark-form: linear-gradient(180deg, rgba(7, 12, 27, 0.733), rgba(0, 0, 0, 0.76));
+  --bg-light-form: linear-gradient(180deg, rgba(255, 255, 255, 0.493), rgba(196, 199, 202, 0.671), rgba(213, 215, 218, 0.74));
   --bg-dark-textarea: linear-gradient(180deg, rgba(5, 98, 151, 0.753), rgba(21, 80, 148, 0.651));
   --bg-dark-div2: radial-gradient( rgb(7, 12, 27), rgb(1, 5, 17), rgb(0, 0, 0));
-  --light-shadow: 0px 15px 25px rgba(255, 255, 255, 0.349);
   --box-dark-shadow: 0px 15px 25px rgba(0, 0, 0);
   --box-light-shadow: 0px 0px 15px rgba(255, 255, 255, 0.562);
-  --btn-bg-color: linear-gradient(180deg, rgba(156, 243, 239, 0.877), rgba(66, 252, 243, 0.89), rgba(15, 114, 160, 0.932));
+  --btn-bg-color: linear-gradient(180deg, rgba(156, 243, 239, 0.877), rgba(66, 230, 252, 0.89), rgba(15, 114, 160, 0.932));
 }
 
 *,
@@ -56,13 +89,13 @@ body main .container-fluid .row input {
   cursor: pointer;
 }
 body main .container-fluid .row .div1 {
-  box-shadow: var(--box-light-shadow);
+  box-shadow: var(--box-dark-shadow);
   border-radius: 15px;
 }
 body main .container-fluid .row .div1 form {
   border: 0;
   border-radius: 15px;
-  background: var(--bg-form);
+  background: var(--bg-light-form);
 }
 body main .container-fluid .row .div1 form .divButtons {
   display: flex;
@@ -71,7 +104,7 @@ body main .container-fluid .row .div1 form .divButtons {
 }
 body main .container-fluid .row .div1 form textarea {
   border: 0;
-  background: var(--bg-light-textarea);
+  background: transparent;
 }
 body main .container-fluid .row button {
   min-width: 175px;
@@ -82,8 +115,8 @@ body main .container-fluid .row button:active {
   transform: scale(0.9);
 }
 body main .container-fluid .row .div2 {
-  box-shadow: var(--box-light-shadow);
-  background: var(--bg-dark-div2);
+  box-shadow: var(--box-dark-shadow);
+  background: linear-gradient(180deg, rgba(138, 138, 138, 0.705), rgba(119, 118, 118, 0.678));
   border-radius: 15px;
 }
 body main .container-fluid .row .div2 textarea {
@@ -108,12 +141,12 @@ body main .container-fluid .row #btnEncryp {
 }
 body main .container-fluid .row #btnEncryp:hover {
   color: var(--white);
-  background: linear-gradient(180deg, rgba(60, 131, 126, 0.877), rgba(22, 97, 93, 0.89), rgba(9, 65, 88, 0.932)) !important;
+  background: linear-gradient(360deg, rgba(2, 46, 71, 0.877), rgba(4, 74, 121, 0.89), rgba(15, 114, 160, 0.932)) !important;
   transition: all 0.5s;
   transform: translateY(-0.4rem);
 }
 body main .container-fluid .row #btnEncryp:active {
-  transform: scale(0.8);
+  transform: scale(0.9);
 }
 @keyframes slider {
   from {
@@ -131,12 +164,12 @@ body main .container-fluid .row #btnDesencryp {
 }
 body main .container-fluid .row #btnDesencryp:hover {
   color: var(--white);
-  background: linear-gradient(180deg, rgba(60, 131, 126, 0.877), rgba(22, 97, 93, 0.89), rgba(9, 65, 88, 0.932)) !important;
+  background: linear-gradient(360deg, rgba(2, 46, 71, 0.877), rgba(4, 74, 121, 0.89), rgba(15, 114, 160, 0.932)) !important;
   transition: all 0.5s;
   transform: translateY(-0.4rem);
 }
 body main .container-fluid .row #btnDesencryp:active {
-  transform: scale(0.8);
+  transform: scale(0.9);
 }
 @keyframes slider {
   from {
@@ -153,12 +186,12 @@ body main .container-fluid .row #btnCopy {
 }
 body main .container-fluid .row #btnCopy:hover {
   color: var(--white);
-  background: linear-gradient(180deg, rgba(60, 131, 126, 0.877), rgba(22, 97, 93, 0.89), rgba(9, 65, 88, 0.932)) !important;
+  background: linear-gradient(360deg, rgba(2, 46, 71, 0.877), rgba(4, 74, 121, 0.89), rgba(15, 114, 160, 0.932)) !important;
   transition: all 0.5s;
   transform: translateY(-0.4rem);
 }
 body main .container-fluid .row #btnCopy:active {
-  transform: scale(0.8);
+  transform: scale(0.9);
 }
 body .container footer a {
   color: black;

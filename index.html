@@ -19,34 +19,35 @@
     <main class="my-4 pb-5">
         <div class="container-fluid">
             <div class="row d-flex gap-3 justify-content-center mx-auto">
-                <div class="d-flex justify-content-between py-3">
+                <div class="py-3">
                     <a href="#"><img id="logoAlura" class="img-fluid position-absolute ms-4" src="assets/img/logo.png" alt="logo de alura"></a>
                     <div class="divHeader text-center pb-2">
                         <h1>Challenge ONE</h1>
                         <p>Encriptador/Desencriptador de texto</p>
-                    </div>
-                    <div class="form-switch">
-                        <input class="form-check-input border-0 fs-3" type="checkbox" onclick="modoOscuro();"/>
+                        <div class="ms-4 my-2 form-switch">
+                            <input class="form-check-input border-0 fs-3" type="checkbox" onclick="modoOscuro();"/>
+                        </div>
+                        <strong>Claro/Oscuro</strong>
                     </div>
                 </div>
-                <div class="div1 draw col-lg-6 p-0">
+                <div class="div1 draw col-md-6 p-0">
                     <form action="" class="form-control">
                         <div class="div_palabra position-relative p-3">
-                            <label for="palabra" class="form-label fw-bold"></label>
+                            <label for="palabra" class="form-label"></label>
                             <textarea type="text" class="form-control fs-4 w-100" name="palabra" id="palabra" onkeypress="return check(event)" placeholder="Ingresa el texto aquí.." rows="10"></textarea>
-                            <small class="small text-light bi bi-exclamation-circle"><em> Solo letras minúsculas y sin acentos</em></small>
+                            <small class="small bi bi-exclamation-circle"><em> Solo letras minúsculas y sin acentos</em></small>
                         </div>
                         <div class="divButtons pb-4 px-3">
-                            <button id="btnEncryp" class="btn bg-gradient p-3" type="button" onclick="encriptar();"><i class="bi bi-envelope-dash-fill"> Encriptar</i></button>
-                            <button id="btnDesencryp" class="btn bg-gradient p-3" type="button" onclick="desencriptar();"><i class="bi bi-envelope-open-fill"> Desencriptar</i></button>
+                            <button id="btnEncryp" class="btn bg-gradient p-3 w-100" type="button" onclick="encriptar();"><i class="bi bi-envelope-dash-fill"> Encriptar</i></button>
+                            <button id="btnDesencryp" class="btn bg-gradient p-3 w-100" type="button" onclick="desencriptar();"><i class="bi bi-envelope-open-fill"> Desencriptar</i></button>
                         </div>
                     </form>
                 </div>
-                <div class="div2 draw col-lg-4">
-                    <div class="position-relative px-3 text-center text-light">
+                <div class="div2 draw col-md-4">
+                    <div class="position-relative px-3 text-center">
                         <div class="div_mensaje py-4">
-                            <label for="mensaje" class="form-label fw-bold"></label>
-                            <textarea type="text" class="form-control text-light fs-4 border-0 w-100" name="mensaje" id="mensaje" rows="10" readonly></textarea>
+                            <label for="mensaje" class="form-label"></label>
+                            <textarea type="text" class="form-control fs-4 border-0 w-100" name="mensaje" id="mensaje" rows="10" readonly></textarea>
                             <button id="btnCopy"
                                 class="btn btn-lg rounded-3 mt-5 mb-2"
                                 type="button" onclick="copyText();"><i class="bi bi-clipboard2"> Copiar</i></button>
@@ -54,8 +55,8 @@
                         <div id="div_imagen" class="position-absolute top-0 mt-5 px-5">
                             <div class="d-flex gap-3 flex-wrap justify-content-center">
                                 <img id="imgNoMensaje" src="assets/img/img_ningunMensaje.png" class="img-fluid" alt="no_hay_texto">
-                                <h1 class="fs-2">Ningún mensaje fue encontrado</h1>
-                                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                                <h1 class="fs-2 fw-bold pt-3">Ningún mensaje fue encontrado</h1>
+                                <p><i>Ingresa el texto que deseas encriptar o desencriptar</i></p>
                             </div>
                         </div>
                     </div>
@@ -63,7 +64,7 @@
             </div>
     </main>
     <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center mt-5 border-top border-2">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center mt-4 border-top border-2">
             <div class="col-md-4 d-flex align-items-center">
                 <span class="mb-3 mb-md-0">© Gian Franco Crova 2023</span>
             </div>
