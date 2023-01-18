@@ -1,0 +1,34 @@
+
+
+.darkBg {
+    background: radial-gradient(rgb(0, 3, 10), rgb(1, 13, 31), rgb(0, 0, 0));
+    background-size: 600% 200%;
+    position: relative;
+    animation: cambiar 8s ease-in-out infinite;
+    main {
+        .container-fluid {
+            .row {
+                .divHeader {
+                    h1 {
+                        color: var(--white);
+                        font-weight: 800;
+                        text-shadow: none;
+                    }
+                    p {
+                        color: var(--white);
+                    }
+                }
+                input {
+                    background-color: black;
+                }
+            }
+        }
+    }
+    div {
+        footer {
+            * {
+                color: var(--white);
+            }
+        }
+    }
+}

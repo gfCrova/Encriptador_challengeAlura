@@ -81,3 +81,7 @@ const disableTextArea = () => {
     }, 1000);
 }
 
+const modoOscuro = () => {
+    const cuerpo = document.body;
+    cuerpo.classList.toggle('darkBg');
+}
