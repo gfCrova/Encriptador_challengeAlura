@@ -9,7 +9,7 @@
   --light-shadow: 0px 15px 25px rgba(255, 255, 255, 0.349);
   --box-dark-shadow: 0px 15px 25px rgba(0, 0, 0);
   --box-light-shadow: 10px 15px 35px rgba(255, 255, 255, 0.562);
-  --btn-bg-color: linear-gradient(180deg, white, rgba(255, 174, 0, 0.685), rgba(226, 155, 0, 0.822), rgba(110, 77, 5, 0.342));
+  --btn-bg-color: linear-gradient(180deg, rgba(156, 243, 239, 0.877), rgba(66, 252, 243, 0.89), rgba(15, 114, 160, 0.932));
 }
 
 *,
@@ -84,7 +84,8 @@ body main .container-fluid .row #btnEncryp {
 }
 body main .container-fluid .row #btnEncryp:hover {
   color: var(--white);
-  transition: all 0.2s;
+  background: linear-gradient(180deg, rgba(60, 131, 126, 0.877), rgba(22, 97, 93, 0.89), rgba(9, 65, 88, 0.932)) !important;
+  transition: all 0.5s;
   transform: translateY(-0.4rem);
 }
 body main .container-fluid .row #btnEncryp:active {
@@ -106,7 +107,8 @@ body main .container-fluid .row #btnDesencryp {
 }
 body main .container-fluid .row #btnDesencryp:hover {
   color: var(--white);
-  transition: all 0.2s;
+  background: linear-gradient(180deg, rgba(60, 131, 126, 0.877), rgba(22, 97, 93, 0.89), rgba(9, 65, 88, 0.932)) !important;
+  transition: all 0.5s;
   transform: translateY(-0.4rem);
 }
 body main .container-fluid .row #btnDesencryp:active {
@@ -127,7 +129,8 @@ body main .container-fluid .row #btnCopy {
 }
 body main .container-fluid .row #btnCopy:hover {
   color: var(--white);
-  transition: all 0.2s;
+  background: linear-gradient(180deg, rgba(60, 131, 126, 0.877), rgba(22, 97, 93, 0.89), rgba(9, 65, 88, 0.932)) !important;
+  transition: all 0.5s;
   transform: translateY(-0.4rem);
 }
 body main .container-fluid .row #btnCopy:active {

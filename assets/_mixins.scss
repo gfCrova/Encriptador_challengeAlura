@@ -5,8 +5,8 @@
     background: var(--btn-bg-color) !important;
     &:hover {
         color: var(--white);
-        //background: linear-gradient(0deg, rgba(255, 174, 0, 0.685), rgba(226, 155, 0, 0.822), rgba(110, 77, 5, 0.596)) !important;
-        transition: all 0.2s;
+        background: linear-gradient(180deg, rgba(60, 131, 126, 0.877), rgba(22, 97, 93, 0.89), rgba(9, 65, 88, 0.932)) !important;
+        transition: all 0.5s;
         transform: translateY(-0.4rem);
     }
     &:active {
