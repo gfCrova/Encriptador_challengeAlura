@@ -44,5 +44,5 @@ Por ejemplo:
 
   <li><a href="https://www.aluracursos.com/blog/git-y-github-que-son-y-primeros-pasos" target="_blank" rel="noreferrer ugc nofollow" class="atlaskit-smart-link"><div class="js-react-root"><span class="loader-wrapper"><span><span aria-expanded="false" aria-haspopup="true"><a href="https://www.aluracursos.com/blog/git-y-github-que-son-y-primeros-pasos" tabindex="0" role="button" data-testid="inline-card-resolved-view" class="css-1llm9d6"><span class="css-1awfwlv"><span class="css-1n3444m"><span class="css-w2w4jx"></span><img class="smart-link-icon css-qq5phv" width="25" src="https://www.aluracursos.com/assets/favicon.1647533644.ico" data-testid="inline-card-icon-and-title-image"></span><span class="smart-link-title-wrapper css-0"> Git y Github: que son y primeros pasos | Alura Cursos Online</span></span></a></span></span></span></div></a></li>
   </ul>
-  <img align="right" src="https://user-images.githubusercontent.com/103906625/212557048-0d50d7ba-5b74-4eb9-a550-5bc74395baeb.png" width="250px"/>
+  <!--<img align="right" src="https://user-images.githubusercontent.com/103906625/212557048-0d50d7ba-5b74-4eb9-a550-5bc74395baeb.png" width="250px"/>-->
 </div>
