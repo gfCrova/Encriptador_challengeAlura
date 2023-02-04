@@ -1,8 +1,8 @@
 <a href="https://www.aluracursos.com/?gclid=Cj0KCQiAtvSdBhD0ARIsAPf8oNkNDV1JY1TMuI1RAyXhI1vuyR-rOMjV8nLxElHwKbmcdRwRgxL1rg8aAqcDEALw_wcB"><img align="left"  src="https://www.oracle.com/a/ocom/img/rc56-customerlogo-alura-latam.png" width="200"/></a>
 
-> <h1>Encriptador/Desencriptador de Texto</h1>
-> <h3> Challenge ONE</h3> 
-<br><br><br>
+> <h1 align="center">Encriptador/Desencriptador de Texto</h1>
+> <h1 align="center"> Challenge ONE</h1> 
+<br><br>
 
 > Una App que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
 
