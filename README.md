@@ -1,4 +1,4 @@
-<a href="https://www.aluracursos.com/?gclid=Cj0KCQiAtvSdBhD0ARIsAPf8oNkNDV1JY1TMuI1RAyXhI1vuyR-rOMjV8nLxElHwKbmcdRwRgxL1rg8aAqcDEALw_wcB"><img align="left"  src="https://www.oracle.com/a/ocom/img/rc56-customerlogo-alura-latam.png" width="200"/></a>
+<a href="https://www.aluracursos.com/?gclid=Cj0KCQiAtvSdBhD0ARIsAPf8oNkNDV1JY1TMuI1RAyXhI1vuyR-rOMjV8nLxElHwKbmcdRwRgxL1rg8aAqcDEALw_wcB"><img src="https://www.oracle.com/a/ocom/img/rc56-customerlogo-alura-latam.png" width="200"/></a>
 
 > <h1> Encriptador/Desencriptador de Texto</h1>
 > <h2> Challenge ONE</h2>
